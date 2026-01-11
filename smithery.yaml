@@ -1,0 +1,14 @@
+runtime: "container"
+build:
+  dockerfile: "Dockerfile"
+  dockerBuildPath: "."
+startCommand:
+  type: "http"
+configSchema:
+  type: "object"
+  properties:
+    MASSIVE_API_KEY:
+      type: "string"
+      description: "Your Massive.com API key"
+  required:
+    - MASSIVE_API_KEY

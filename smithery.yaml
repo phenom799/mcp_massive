@@ -12,3 +12,4 @@ configSchema:
       description: "Your Massive.com API key"
   required:
     - MASSIVE_API_KEY
+  auth: none
